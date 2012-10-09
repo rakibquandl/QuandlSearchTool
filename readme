@@ -1,6 +1,8 @@
 It is a software tool which is intend to be used by Quandl's technical team.
 
-You can upload a bunch of search keywords and they are classifies as "Unclassified" at the beginning. Then the tool allows
-you to go to Quandl's page and take decision about the keyword and you can change the status/classification value of any search
-key at any time. You can add new classification or delete any classification. The search keys associated with the deleted classification
-go to "Unclassified" category automatically so that you can easily give them their suitable category later.
+You can upload a bunch of search keywords and they are classified as "Unclassified" at the beginning. 
+Then the tool allows you to go to Quandl's page and take decision about the keyword and you can change the 
+status/category of any search key at any time. 
+You can add new classification or delete any classification. 
+The search keys associated with the deleted classification go to "Unclassified" category automatically so that you 
+can easily give them their suitable category later.
