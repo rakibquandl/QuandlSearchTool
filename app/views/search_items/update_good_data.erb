@@ -1,0 +1,16 @@
+<h1>Show ALL Data </h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% SearchItem.all.each do |search_item|%>
+      <tr>
+        <td><b>Search Key:</b> <%=  search_item.name %></td>
+        <td><b>Classification:</b> <%  cID=search_item.classification_id%> <%=  Classification.find(cID).value %></td>
+      </tr>
+  <% end %>
+</table>

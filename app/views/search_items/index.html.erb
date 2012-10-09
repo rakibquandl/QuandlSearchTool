@@ -1,0 +1,40 @@
+<h1><%=@title  %></h1>
+
+<%@classifications.each do |classification|%>
+    &nbsp<%= link_to classification.value, search_items_path(status: classification.id)%>
+<%end%>
+
+<br><br><br>
+
+<table>
+  <tr>
+    <th>Search Term</th>
+    <th></th>
+  </tr>
+
+
+<% @search_items.each do |search_item| %>
+  <tr>
+    <td>&nbsp<%= search_item.name %></td>
+
+      <% @classifications.each do |classification| %>
+        <%= form_for search_item do |f|%>
+            <%= f.hidden_field :classification_id, :value => classification.id %>
+            <%= hidden_field_tag 'selected', 'none'  %>
+            <%= f.hidden_field :status, :value => params[:status] %>
+       <td><%= f.submit classification.value %></td>
+      <% end %>
+    <% end %>
+
+
+    <td>&nbsp<%= link_to 'Delete', search_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>&nbsp<%= link_to "Go to Quandl", "http://www.quandl.com/search/#{search_item.name}", :target => "_blank"%></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Upload Data', new_search_item_path %>
+&nbsp&nbsp<%= link_to 'Go To Classifications', classifications_path %>

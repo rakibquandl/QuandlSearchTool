@@ -1,0 +1,17 @@
+<h1>Show Good Data Status</h1>
+
+<table>
+  <tr>
+    <th>Search Key:</th>
+    <th>Value:</th>
+    <th></th>
+  </tr>
+
+  <% SearchItem.where(classification_id: 15).each do |search_item|%>
+      <tr>
+        <td><%=  search_item.name %></td>
+        <td><%=search_item.classification.value %></td>
+
+      </tr>
+  <% end %>
+</table>

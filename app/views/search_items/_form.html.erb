@@ -1,0 +1,20 @@
+<%= form_for @search_item, html: {multipart: true} do |f| %>
+  <% if @search_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@search_item.errors.count, "error") %> prohibited this search_item from being saved:</h2>
+
+      <ul>
+      <% @search_item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.file_field :file %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Create Search Items" %>
+  </div>
+<% end %>

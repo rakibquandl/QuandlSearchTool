@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @search_item.name %>
+  <b>Value:</b>
+  <%= @search_item.classification.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_search_item_path(@search_item) %> |
+<%= link_to 'Back', search_items_path %>
