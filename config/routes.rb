@@ -78,9 +78,8 @@ SearchTool::Application.routes.draw do
 
 
   resources :classifications
-
   resources :search_items
-
+  root :to => 'search_items#new'
   #root :to => 'search_items#index'
   #root :to => 'classifications#index'
 
