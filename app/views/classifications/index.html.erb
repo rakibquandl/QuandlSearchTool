@@ -9,12 +9,22 @@
   </tr>
 
 <% @classifications.each do |classification| %>
-  <tr>
-    <td><%= classification.value %></td>
-    <td><%= link_to 'Show', classification %></td>
-    <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
-    <td><%= link_to 'Destroy', classification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+
+      <%if classification.value == "Unclassified" %>
+          <tr>
+            <td><%= classification.value %></td>
+            <td><%= link_to 'Show', classification %></td>
+            <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
+          </tr>
+      <%else%>
+
+      <tr>
+        <td><%= classification.value %></td>
+        <td><%= link_to 'Show', classification %></td>
+        <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
+        <td><%= link_to 'Destroy', classification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      <% end %>
 <% end %>
 </table>
 

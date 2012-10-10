@@ -69,7 +69,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/classifications/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="114" selection-start="661" selection-end="661" vertical-scroll-proportion="0.64126396">
+            <state line="26" column="18" selection-start="791" selection-end="791" vertical-scroll-proportion="0.6133829">
               <folding />
             </state>
           </provider>
@@ -133,8 +133,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="438" />
-    <option name="y" value="213" />
+    <option name="x" value="370" />
+    <option name="y" value="196" />
     <option name="width" value="1484" />
     <option name="height" value="708" />
   </component>
@@ -612,7 +612,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="438" y="213" width="1484" height="708" extended-state="0" />
+    <frame x="370" y="196" width="1484" height="708" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -790,7 +790,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/classifications/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="114" selection-start="661" selection-end="661" vertical-scroll-proportion="0.64126396">
+        <state line="26" column="18" selection-start="791" selection-end="791" vertical-scroll-proportion="0.6133829">
           <folding />
         </state>
       </provider>
