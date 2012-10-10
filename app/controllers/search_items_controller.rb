@@ -1,6 +1,7 @@
 class SearchItemsController < ApplicationController
   # GET /search_items
   # GET /search_items.json
+  #http_basic_authenticate_with :name => "quandl",:password => "quandl"
   def index
     if params[:status].blank?
       @search_items = SearchItem.all
