@@ -14,7 +14,7 @@
 
 
 <% @search_items.each do |search_item| %>
-  <tr>
+  <tr class="<%= cycle('oddrow', 'evenrow') %>">
     <td>&nbsp<%= search_item.name %></td>
 
       <% @classifications.each do |classification| %>
@@ -25,7 +25,6 @@
        <td><%= f.submit classification.value %></td>
       <% end %>
     <% end %>
-
 
     <td>&nbsp<%= link_to 'Delete', search_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     <td>&nbsp<%= link_to "Go to Quandl", "http://www.quandl.com/search/#{search_item.name}", :target => "_blank"%></td>

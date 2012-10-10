@@ -1,4 +1,4 @@
-<h1>Listing Classifications</h1>
+<h1>Classification List</h1>
 
 <table>
   <tr>
@@ -11,14 +11,14 @@
 <% @classifications.each do |classification| %>
 
       <%if classification.value == "Unclassified" %>
-          <tr>
+          <tr class="<%= cycle('oddrow', 'evenrow') %>">
             <td><%= classification.value %></td>
             <td><%= link_to 'Show', classification %></td>
             <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
           </tr>
       <%else%>
 
-      <tr>
+      <tr class="<%= cycle('oddrow', 'evenrow') %>">
         <td><%= classification.value %></td>
         <td><%= link_to 'Show', classification %></td>
         <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
