@@ -28,19 +28,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/classifications/index.html.erb">
+      <file leaf-file-name="search_items_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/search_items_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="10" selection-start="557" selection-end="557" vertical-scroll-proportion="0.64126396">
+            <state line="102" column="102" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_items_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/search_items_controller.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/search_items/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="89" selection-start="2176" selection-end="2176" vertical-scroll-proportion="0.0">
+            <state line="9" column="59" selection-start="147" selection-end="147" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -49,16 +49,25 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/search_items/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="9" selection-start="982" selection-end="982" vertical-scroll-proportion="-15.0">
+            <state line="34" column="9" selection-start="982" selection-end="982" vertical-scroll-proportion="-15.541667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/search_items/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="92" selection-start="157" selection-end="157" vertical-scroll-proportion="-2.5">
+            <state line="4" column="99" selection-start="166" selection-end="166" vertical-scroll-proportion="0.111524165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/search_items/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="29" selection-start="510" selection-end="510" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
@@ -80,7 +89,6 @@
         <option value="$PROJECT_DIR$/app/views/search_items/show_good.erb" />
         <option value="$PROJECT_DIR$/app/views/search_items/show_bad.erb" />
         <option value="$PROJECT_DIR$/app/views/classifications/show_all.erb" />
-        <option value="$PROJECT_DIR$/app/views/search_items/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/classifications/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/classifications/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/search_items/index.html.erb" />
@@ -89,10 +97,11 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/classifications/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/search_items/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/search_items_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/search_items/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/search_items/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/classifications/index.html.erb" />
       </list>
     </option>
   </component>
@@ -104,9 +113,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="529" />
-    <option name="y" value="312" />
-    <option name="width" value="1291" />
+    <option name="x" value="338" />
+    <option name="y" value="323" />
+    <option name="width" value="1484" />
     <option name="height" value="708" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -583,14 +592,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="529" y="312" width="1291" height="708" extended-state="0" />
+    <frame x="338" y="323" width="1484" height="708" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28594378" sideWeight="0.92156863" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24756606" sideWeight="0.92156863" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5171289" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -658,11 +667,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/search_items/show_bad.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="22" selection-start="873" selection-end="873" vertical-scroll-proportion="0.36094674" />
@@ -711,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search_items/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="189" selection-end="189" vertical-scroll-proportion="0.2788104">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="78" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
@@ -725,9 +722,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/search_items_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/search_items/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="89" selection-start="2176" selection-end="2176" vertical-scroll-proportion="0.0">
+        <state line="34" column="9" selection-start="982" selection-end="982" vertical-scroll-proportion="-15.541667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/classifications/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="65" selection-start="485" selection-end="485" vertical-scroll-proportion="0.58550185">
           <folding />
         </state>
       </provider>
@@ -739,23 +743,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search_items/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/search_items/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="9" selection-start="982" selection-end="982" vertical-scroll-proportion="-15.0">
+        <state line="9" column="59" selection-start="147" selection-end="147" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/search_items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="102" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search_items/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="29" selection-start="510" selection-end="510" vertical-scroll-proportion="-10.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search_items/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="92" selection-start="157" selection-end="157" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/classifications/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="557" selection-end="557" vertical-scroll-proportion="0.64126396">
+        <state line="4" column="99" selection-start="166" selection-end="166" vertical-scroll-proportion="0.111524165">
           <folding />
         </state>
       </provider>

@@ -99,7 +99,8 @@ class SearchItemsController < ApplicationController
     end
     respond_to do |format|
 
-      format.html { redirect_to @search_item, notice: 'Search items were successfully created.' }
+      #format.html { redirect_to @search_item, notice: 'Search items were successfully created.' }
+      format.html { redirect_to search_items_path(:status=> Classification.find_by_value("Unclassified").id), notice: 'Search items were successfully created.' }
       format.json { render json: @search_item, status: :created, location: @search_item }
     #  #else
     #  #  format.html { render action: "new" }
