@@ -1,3 +1,0 @@
-string
-string 2
-rakib
