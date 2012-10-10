@@ -10,6 +10,7 @@ gem 'thin'
 
 group :development do
   gem 'sqlite3'
+  gem 'taps', :require => false # has an sqlite dependency, which heroku hates
 end
 
 gem 'pg'
