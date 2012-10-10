@@ -21,4 +21,5 @@
 <br />
 
 <%= link_to 'New Classification', new_classification_path %>
+&nbsp&nbsp<%= link_to 'Go To Search Items', search_items_path(:status=> Classification.find_by_value("Good").id) %>
 
