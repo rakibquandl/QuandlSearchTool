@@ -92,7 +92,7 @@ class SearchItemsController < ApplicationController
       if ! exist_check (line.strip)
         @search_item = SearchItem.new(params[:search_item])
         @search_item.name = line.strip
-        @search_item.classification_id=17
+        @search_item.classification_id=Classification.find_by_value("Unclassified").id
         @search_item.save
       end
 
