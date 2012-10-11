@@ -1,6 +1,6 @@
 <h1>Classification List</h1>
 
-<table>
+<table class="table table-bordered table-hover">
   <tr>
     <th>Value</th>
     <th></th>
@@ -13,16 +13,14 @@
       <%if classification.value == "Unclassified" %>
           <tr class="<%= cycle('oddrow', 'evenrow') %>">
             <td><%= classification.value %></td>
-            <td><%= link_to 'Show', classification %></td>
-            <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
+            <td><%= link_to 'Edit', edit_classification_path(classification), :class=>"btn" %></td>
           </tr>
       <%else%>
 
       <tr class="<%= cycle('oddrow', 'evenrow') %>">
         <td><%= classification.value %></td>
-        <td><%= link_to 'Show', classification %></td>
-        <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
-        <td><%= link_to 'Destroy', classification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_classification_path(classification),:class=>"btn" %></td>
+        <td><%= link_to 'Delete', classification, method: :delete, data: { confirm: 'Are you sure?' },:class=>"btn btn-danger" %></td>
       </tr>
       <% end %>
 <% end %>
@@ -30,6 +28,6 @@
 
 <br />
 
-<%= link_to 'New Classification', new_classification_path %>
-&nbsp&nbsp<%= link_to 'Go To Search Items', search_items_path(:status=> Classification.find_by_value("Unclassified").id) %>
+<%= link_to 'Add New Classification', new_classification_path,:class=>"btn" %>
+
 

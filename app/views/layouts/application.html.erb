@@ -5,8 +5,20 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+        <ul class="nav">
+          <li><%= link_to "Classification", classifications_path,:class=>"btn" %></li>
+          <li><%= link_to "Search Item", search_items_path(:status=> Classification.find_by_value("Unclassified").id),:class=>"btn"%></li>
+          <li><%= link_to 'Upload Data', new_search_item_path,:class=>"btn" %></li>
+        </ul>
+    </div>
+  </div>
+</div>
 
 <%= yield %>
 
