@@ -11,14 +11,14 @@
 <% @classifications.each do |classification| %>
 
       <%if classification.value == "Unclassified" %>
-          <tr class="<%= cycle('oddrow', 'evenrow') %>">
-            <td><%= classification.value %></td>
+          <tr>
+            <td><%=link_to classification.value, search_items_path(:status=>Classification.find_by_value(classification.value).id) %></td>
             <td><%= link_to 'Edit', edit_classification_path(classification), :class=>"btn" %></td>
           </tr>
       <%else%>
 
-      <tr class="<%= cycle('oddrow', 'evenrow') %>">
-        <td><%= classification.value %></td>
+      <tr>
+        <td><%= link_to classification.value, search_items_path(:status=>Classification.find_by_value(classification.value).id) %></td>
         <td><%= link_to 'Edit', edit_classification_path(classification),:class=>"btn" %></td>
         <td><%= link_to 'Delete', classification, method: :delete, data: { confirm: 'Are you sure?' },:class=>"btn btn-danger" %></td>
       </tr>

@@ -1,13 +1,42 @@
 class SearchItemsController < ApplicationController
   # GET /search_items
   # GET /search_items.json
-  #http_basic_authenticate_with :name => "quandl",:password => "quandl"
+
+
+  def download
+
+
+     data=[]
+     @search_items=SearchItem.where(classification_id: params[:status])
+     @search_items.each do |search_item|
+       data << search_item.name
+     end
+
+   send_data data.join("\n"), type: "text", filename: "#{Classification.find_by_id(params[:status]).value}.txt"
+    #
+     #file = "search_items.txt"
+     #File.open(file, "a"){ |f| f << data}
+     ##f=File.new("out", "w")
+     #
+     ##(1..data.size).each do |i|
+     ##  f.puts (data[i])
+     ##  #file.write "\n"
+     ## end
+     #
+     #send_file( file )
+     ##send_file( f )
+     ##send_data data, :filename => 'download.txt',:disposition => 'inline'
+
+  end
+
   def index
     if params[:status].blank?
       @search_items = SearchItem.all
       @classifications = Classification.all
+
+
     else
-      @search_items = SearchItem.where(classification_id: params[:status])
+      @search_items = SearchItem.where(classification_id: params[:status]).page(params[:page]).per(10)
       @classifications = Classification.all
     end
 
@@ -25,6 +54,7 @@ class SearchItemsController < ApplicationController
   # GET /search_items/1.json
   def show
     @search_item = SearchItem.find(params[:id])
+    #@search_items = SearchItem.paginate(:page=>params[:page], :per_page => 5, :order => 'created_at DESC')
 
     respond_to do |format|
       format.html # show.html.erb
@@ -115,14 +145,6 @@ class SearchItemsController < ApplicationController
     @search_item = SearchItem.find(params[:id])
     @search_item.classification_id = params[:search_item][:classification_id]
     @search_item.save
-
-    #if(@search_item.classification_id ==15)
-    #  @search_item.classification.value="Good"
-    #elsif (@search_item.classification_id ==16)
-    #  @search_item.classification.value="Bad"
-    #else
-    #  @search_item.classification.value="Unclassified"
-    #end
 
 
     redirect_to search_items_path(:status=>params[:search_item][:status])

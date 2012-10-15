@@ -15,6 +15,7 @@
           <li><%= link_to "Classification", classifications_path,:class=>"btn" %></li>
           <li><%= link_to "Search Item", search_items_path(:status=> Classification.find_by_value("Unclassified").id),:class=>"btn"%></li>
           <li><%= link_to 'Upload Data', new_search_item_path,:class=>"btn" %></li>
+          <li><%= link_to 'Download Data', download_search_items_path(:status=>params[:status]),:class=>"btn" %></li>
         </ul>
     </div>
   </div>

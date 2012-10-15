@@ -1,5 +1,4 @@
 <h1><%=@title  %></h1>
-
 <%@classifications.each do |classification|%>
     &nbsp<%= link_to classification.value, search_items_path(status: classification.id),:class => "btn"%>
 <%end%>
@@ -29,9 +28,11 @@
     <td>&nbsp<%= link_to 'Delete', search_item, method: :delete, data: { confirm: 'Are you sure?' } ,
                          :class=>"btn btn-danger"%></td>
 
-
   </tr>
 <% end %>
+
 </table>
+
+<%= paginate @search_items %>
 
 <br />
