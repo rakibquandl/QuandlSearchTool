@@ -175,10 +175,11 @@ class SearchItemsController < ApplicationController
   # DELETE /search_items/1.json
   def destroy
     @search_item = SearchItem.find(params[:id])
+    temp=@search_item
     @search_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to search_items_path(:status=> Classification.find_by_value("Unclassified").id) }
+      format.html { redirect_to search_items_path(:status=> Classification.find_by_value(temp.classification.value).id) }
       format.json { head :no_content }
     end
   end
